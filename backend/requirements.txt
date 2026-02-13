@@ -1,0 +1,50 @@
+# FastAPI & Server
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy[asyncio]
+aiosqlite
+alembic
+
+# Auth & Security
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+
+# Redis
+redis
+
+# Validation & Config
+pydantic
+pydantic-settings
+email-validator
+
+# WebSockets
+websockets
+
+# SSH & Remote
+paramiko
+
+# Background Tasks
+celery
+
+# Monitoring
+psutil
+
+# GPU
+pynvml
+
+# Network
+speedtest-cli
+
+# Utils
+python-dateutil
+httpx
+
+# Screenshot
+Pillow
+
+# CORS
+starlette
