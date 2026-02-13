@@ -1,0 +1,15 @@
+MIT License
+
+Copyright (c) 2026 Alireza Nekounam
+
+Permission is granted, free of charge, to anyone who wants to use this software — including the backend, frontend, and agent parts — for personal, educational, or commercial purposes. You can copy, modify, merge, publish, distribute, sublicense, or sell it, as long as you include this notice in all copies.
+
+This software is provided "as-is". I, the author, do not take responsibility for any damage, data loss, or misuse. Use it responsibly — it was built for monitoring and remote control of machines (NexusCtrl project). Make sure you follow local laws and ethical guidelines when using it.
+
+---
+
+**Quick notes about NexusCtrl**  
+- Backend: handles communication and agent management  
+- Agent: installed on the monitored machine  
+- Frontend: user interface for monitoring  
+- Security: no built-in authentication; use at your own risk  
