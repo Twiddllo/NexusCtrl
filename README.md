@@ -7,6 +7,20 @@
 
 This is a personal project I built to help manage multiple RDP servers more easily. I'm not particularly skilled at frontend development, so this is primarily a backend-focused tool with a functional interface for monitoring and controlling my servers. It started as a test for myself but became quite useful for managing multiple RDP connections.
 
+------------------------------------------------------------------------
+
+## 🎬 Preview
+
+### Setup Process
+
+![Setup Preview](media/setup.gif)
+
+### NexusCtrl Dashboard View
+
+![Dashboard Preview](media/nexusctrl%20view.gif)
+
+------------------------------------------------------------------------
+
 ## Features
 
 ### Server Monitoring
@@ -137,5 +151,6 @@ You can modify:
 - If metrics aren't updating: Check WebSocket connections and firewall settings
 
 ## License
+
 
 Personal project for educational purposes. If using this code, please respect any applicable licenses for the dependencies used.
