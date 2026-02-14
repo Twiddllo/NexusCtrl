@@ -1,0 +1,33 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Run weekly on Mondays at 2 AM UTC
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**/requirements.txt'
+      - '**/package.json'
+      - '**/package-lock.json'
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Security scan for Python dependencies
+      uses: pyupio/safety-action@v2.0.1
+      with:
+        requirements-file: backend/requirements.txt
+
+    - name: Secret scanning
+      uses: trufflesecurity/truffleHog@main
+      with:
+        path: ./
+        base: HEAD~1
+
+    - name: CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        languages: python,javascript
