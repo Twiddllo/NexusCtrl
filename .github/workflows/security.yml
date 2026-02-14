@@ -19,7 +19,7 @@ jobs:
     - name: Security scan for Python dependencies
       uses: pyupio/safety-action@v1
       with:
-        requirements-file: backend/requirements.txt
+        requirements-file-path: backend/requirements.txt
 
     - name: Secret scanning
       uses: trufflesecurity/truffleHog@main
