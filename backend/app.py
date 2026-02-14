@@ -2,16 +2,15 @@ import os
 import json
 import enum
 import asyncio
-import datetime
 from datetime import datetime, timedelta, timezone
-from typing import Optional, List, Dict, Any, Set
+from typing import Optional, List, Dict, Set
 
 from fastapi import FastAPI, APIRouter, Depends, HTTPException, status, Query, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer
 from pydantic import BaseModel, EmailStr
 from pydantic_settings import BaseSettings
-from sqlalchemy import Column, Integer, String, Text, DateTime, Float, Boolean, ForeignKey, JSON, Enum as SAEnum, select, func, update
+from sqlalchemy import Column, Integer, String, Text, DateTime, Float, Boolean, ForeignKey, JSON, Enum as SAEnum, select, func
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase, relationship
 from jose import JWTError, jwt
@@ -230,7 +229,8 @@ class UserResponse(BaseModel):
     is_active: bool
     avatar_url: Optional[str] = None
     created_at: Optional[datetime] = None
-    class Config: from_attributes = True
+    class Config:
+        from_attributes = True
 
 class UserRegister(BaseModel):
     username: str
