@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { cn } from './utils/cn'
 import {
     Activity, Wifi, Cpu, HardDrive, Download, Upload,
     LayoutDashboard, Server, CheckSquare, Settings, User,
@@ -10,8 +11,6 @@ import {
     LineChart, Line, XAxis, YAxis, CartesianGrid,
     Tooltip, ResponsiveContainer
 } from 'recharts'
-
-export function cn(...inputs) { return twMerge(clsx(inputs)) }
 
 const Button = React.forwardRef(({ className, variant = "default", size = "default", ...props }, ref) => {
     const variants = {
