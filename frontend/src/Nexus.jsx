@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
 import { cn } from './utils/cn'
 import {
     Activity, Wifi, Cpu, HardDrive, Download, Upload,
