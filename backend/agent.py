@@ -2,7 +2,6 @@ import asyncio
 import json
 import psutil
 import websockets
-import os
 import base64
 import io
 from PIL import ImageGrab
