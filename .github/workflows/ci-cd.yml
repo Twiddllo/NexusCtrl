@@ -89,7 +89,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Security scan for Python dependencies
-      uses: pyupio/safety-action@v2
+      uses: pyupio/safety-action@v1
       with:
         requirements-file: backend/requirements.txt
 
