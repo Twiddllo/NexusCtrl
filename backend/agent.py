@@ -110,6 +110,8 @@ async def run_agent():
                 await websocket.send(json.dumps(auth_payload))
                 
                 # 2. Handle commands asynchronously
+                command_task = asyncio.create_task(handle_commands(websocket))
+                
                 try:
                     counter = 0
                     while True:
@@ -122,6 +124,10 @@ async def run_agent():
                         await asyncio.sleep(UPDATE_INTERVAL)
                 finally:
                     command_task.cancel()
+                    try:
+                        await command_task
+                    except asyncio.CancelledError:
+                        pass
                     
         except Exception as e:
             print(f"❌ Connection error: {e}. Retrying in 5s...")
