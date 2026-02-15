@@ -48,6 +48,27 @@ This is a personal project I built to help manage multiple RDP servers more easi
 - Captures screen for remote viewing
 - Responds to remote commands (like killing processes)
 
+
+------------------------------------------------------------------------
+
+## 🚀 CI/CD
+
+This project uses GitHub Actions for automated testing, security scanning, and staged deployment.
+
+- Backend tested on Python 3.8–3.11
+- Frontend tested on Node.js 18–22
+- Linting (flake8 & ESLint)
+- Dependency vulnerability scanning (safety)
+- Secret scanning (TruffleHog)
+- CodeQL analysis
+- Dev → Prod staged deployment on push to main
+
+Workflows are located in:
+`.github/workflows/`
+
+------------------------------------------------------------------------
+
+
 ## How It Works
 
 The system consists of two parts:
@@ -157,4 +178,5 @@ You can modify:
 
 
 Personal project for educational purposes. If using this code, please respect any applicable licenses for the dependencies used.
+
 
