@@ -1,7 +1,10 @@
 # NexusCtrl - Personal RDP Server Management Tool
 
 ## ⚠️ Important Security Notice
-**This tool is designed for personal use only.** The frontend should only be accessible from your own PC to prevent unauthorized access. By default, the application binds to localhost (127.0.0.1) and should remain restricted to your local machine to prevent hackers from accessing and changing your server configurations.
+If you expose the backend endpoint, restrict access to trusted IP addresses only.
+Use firewall rules, a reverse proxy, or VPN/SSH tunneling to whitelist specific IPs.
+Never leave the port publicly accessible, or unauthorized users could gain control of your servers.
+
 
 ## About This Project
 
@@ -154,3 +157,4 @@ You can modify:
 
 
 Personal project for educational purposes. If using this code, please respect any applicable licenses for the dependencies used.
+
