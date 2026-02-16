@@ -30,7 +30,7 @@ This is a personal project I built to help manage multiple RDP servers more easi
 - Real-time CPU, RAM, and network usage tracking
 - Live screen capture from connected agents
 - Active process monitoring with kill capability
-- Performance history charts
+- Performance history usage
 
 ### Task Management
 - Create and manage tasks
@@ -178,5 +178,6 @@ You can modify:
 
 
 Personal project for educational purposes. If using this code, please respect any applicable licenses for the dependencies used.
+
 
 
